@@ -9,7 +9,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 const app = createApp(App)
 
 const api = axios.create({
-	baseURL: 'https://iron-pool.com:8443', //82
+	//baseURL: 'https://iron-pool.com:8443',
+	baseURL: 'http://iron-pool.com:82',
 })
 
 app.config.globalProperties.$api = api

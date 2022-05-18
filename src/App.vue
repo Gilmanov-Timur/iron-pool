@@ -1,9 +1,15 @@
 <template>
-	<div class="flex-grow-1">
-		<Header />
-		<router-view :poolInfo="poolInfo" />
+	<div class="d-table-row">
+		<div class="d-table-cell h-100">
+			<Header />
+			<router-view :poolInfo="poolInfo" />
+		</div>
 	</div>
-	<Footer />
+	<div class="d-table-row">
+		<div class="d-table-cell">
+			<Footer />
+		</div>
+	</div>
 </template>
 
 <script>

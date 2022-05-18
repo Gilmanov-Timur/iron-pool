@@ -1,12 +1,21 @@
 <template>
 	<header
 		id="header"
-		class="py-3"
-		:class="{
-			'inner-page': $route.name !== 'home'
-		}"
+		:class="{'inner-page': $route.name !== 'home'}"
 	>
-		<div class="container">
+		<div
+			class="alert alert-warning alert-dismissible fade show m-0 py-2 text-center"
+			v-if="warningShow"
+		>
+			{{ $t('under_construction') }}
+			<button
+				type="button"
+				class="btn-close p-2"
+				data-bs-dismiss="alert"
+				@click="hideWarning"
+			></button>
+		</div>
+		<div class="container py-3">
 			<div class="row align-items-center justify-content-between">
 				<div class="col-auto">
 					<div class="logo">
@@ -91,9 +100,11 @@ export default {
 		return {
 			menuShow: false,
 			backButtonShow: false,
+			warningShow: !localStorage.getItem('underConstructionWarning'),
 		}
 	},
 	mounted() {
+		console.log(this.warningShow)
 		window.addEventListener('scroll', this.onScroll)
 	},
 	unmounted() {
@@ -112,14 +123,17 @@ export default {
 		changeLanguage(locale) {
 			localStorage.setItem('locale', locale)
 			window.location.reload()
-		}
+		},
+		hideWarning() {
+			localStorage.setItem('underConstructionWarning', '0')
+		},
 	}
 }
 </script>
 
 <style scoped>
 #header {
-	position: fixed;
+	position: sticky;
 	right: 0;
 	left: 0;
 	top: 0;
