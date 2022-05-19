@@ -28,7 +28,7 @@ export default {
 						y: {
 							ticks: {
 								callback: value => {
-									return `${value} ${this.$t('mhs')}`
+									return `${value} ${this.$t(this.unit)}`
 								}
 							}
 						}
@@ -53,7 +53,7 @@ export default {
 									let label = '';
 
 									if (context.parsed.y !== null) {
-										label += context.parsed.y.toLocaleString('fr', { minimumFractionDigits: 2 }).replace(/,/g, '.') + ' ' + this.$t('mhs')
+										label += context.parsed.y.toLocaleString('fr', { minimumFractionDigits: 2 }).replace(/,/g, '.') + ' ' + this.$t(this.unit)
 									}
 
 									return label;
@@ -68,11 +68,11 @@ export default {
 						return `${this.paddingZero(date.getHours())}:${this.paddingZero(date.getMinutes())}:${this.paddingZero(date.getSeconds())}`
 					}),
 					datasets: [{
-						label: this.$t('hash_rate_mhs'),
+						label: this.unit === 'mhs' ? this.$t('hash_rate_mhs') : this.$t('hash_rate_ghs'),
 						pointHoverBackgroundColor: '#26e4b1',
 						pointHoverBorderColor: '#5A3DF5',
 						data: this.history.map(history => {
-							return (Math.floor(history.rawHashCount / 10000) / 100).toFixed(2)
+							return (Math.floor(history.rawHashCount / (this.unit === 'mhs' ? 10000 : 10000000)) / 100).toFixed(2)
 						}),
 					}]
 				},
@@ -83,7 +83,18 @@ export default {
 		paddingZero(value) {
 			return value < 10 ? `0${value}` : value;
 		}
-	}
+	},
+	computed: {
+		maxValue() {
+			return Math.max(...this.history.map(item => item.rawHashCount))
+		},
+		unit() {
+			if (this.maxValue < 1000000000) {
+				return 'mhs'
+			}
+			return 'ghs'
+		},
+	},
 }
 </script>
 

@@ -8,7 +8,9 @@ export default {
 	dashboard: `Dashboard`,
 	enter: `Enter`,
 	hash_rate_mhs: `Average hash rate (MH/s)`,
+	hash_rate_ghs: `Average hash rate (GH/s)`,
 	mhs: `MH/s`,
+	ghs: `GH/s`,
 	online: `Online`,
 	last_seen: `Last seen`,
 	tagline: `The best Ironfish Mining Pool`,
@@ -50,7 +52,7 @@ export default {
 	question_2: `What is a testnet and when will it end?`,
 	answer_2: `The testnet allows network developers to identify all possible bugs before the mainnet goes live. The more thorough and lengthy testing is, the more likely it is that the main network will not have critical vulnerabilities. The decision to change the rules for conducting and timing of testing is made by the project team.`,
 	question_3: `Why are pools needed?`,
-	answer_3: `IRONFISH is a blockchain based on the POW principle. This means that new blocks are signed by the nodes of the network using the processing power of the processors. As the network grows and its complexity, the probability of creating new blocks by individual nodes decreases. In order for the owners of nodes (especially with outdated processors) to receive new coins evenly over time, and the first pools appeared.`,
+	answer_3: `IRONFISH is a blockchain based on the <a href="https://en.wikipedia.org/wiki/Proof_of_work" target="_blank" rel="nofollow">POW</a> principle. This means that new blocks are signed by the nodes of the network using the processing power of the processors. As the network grows and its complexity, the probability of creating new blocks by individual nodes decreases. In order for the owners of nodes (especially with outdated processors) to receive new coins evenly over time, and the first pools appeared.`,
 	question_4: `How to create an IRONFISH node?`,
 	answer_4: ``, // in component
 	question_5: `What is graffiti?`,

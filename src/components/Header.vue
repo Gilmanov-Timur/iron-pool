@@ -35,7 +35,7 @@
 							:class="{invisible: $route.name !== 'home'}"
 						>
 							<ul class="text-uppercase">
-								<li><a href="#home">{{ $t('home') }}</a></li>
+								<li><a href="#">{{ $t('home') }}</a></li>
 								<li><a href="#information">{{ $t('information') }}</a></li>
 								<li><a href="#quickstart">{{ $t('quickstart') }}</a></li>
 								<li><a href="#faq">{{ $t('faq') }}</a></li>
@@ -104,7 +104,6 @@ export default {
 		}
 	},
 	mounted() {
-		console.log(this.warningShow)
 		window.addEventListener('scroll', this.onScroll)
 	},
 	unmounted() {
