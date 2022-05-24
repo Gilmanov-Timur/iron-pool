@@ -43,7 +43,7 @@
 					<div class="col-auto">
 						<ul class="social-media">
 							<li><a href="https://t.me/ironpool" target="_blank" rel="nofollow"><img src="@/assets/img/telegram.png" alt="telegram"></a></li>
-							<li><a href="https://discord.gg/zC99cucb" target="_blank" rel="nofollow"><img src="@/assets/img/discord.png" alt="discord"></a></li>
+							<li><a href="https://discord.gg/Qxub2fG2KZ" target="_blank" rel="nofollow"><img src="@/assets/img/discord.png" alt="discord"></a></li>
 							<li><a href="https://github.com/iron-fish/ironfish" target="_blank" rel="nofollow"><img src="@/assets/img/github.png" alt="github"></a></li>
 						</ul>
 					</div>

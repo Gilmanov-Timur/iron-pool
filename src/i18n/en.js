@@ -22,7 +22,7 @@ export default {
 	pool_advantages_text: `
 		<p>Reliable hosting and a stable connection with low latency allows you to fully realize the hashrate of your miners without loss.</p>
 		<p>Reliable payout system - 100% of the $IRON coins mined by the pool will be distributed among pool users without hidden fees until the end of testing.</p>
-		<p>Excellent user support and feedback on the popular <a href="https://discord.gg/zC99cucb" target="_blank" rel="nofollow">Discord</a> and <a href="https://t.me/ironpool" target="_blank" rel="nofollow">Telegram</a>.</p>
+		<p>Excellent user support and feedback on the popular <a href="https://discord.gg/Qxub2fG2KZ" target="_blank" rel="nofollow">Discord</a> and <a href="https://t.me/ironpool" target="_blank" rel="nofollow">Telegram</a>.</p>
 		<p>A distinctive feature of the pool is the support of not only Linux, but also Windows clients.</p>
 	`,
 	start_mining: `Start mining`,
@@ -58,7 +58,7 @@ export default {
 	question_5: `What is graffiti?`,
 	answer_5: `This is a unique password that IRONFISH network developers use to identify their users within the test network during all its phases. Graffiti is linked to your email upon registration and is required to track your progress on the testnet <a href="https://testnet.ironfish.network/leaderboard" target="_blank" rel="nofollow">leaderboard</a>. Graffiti is currently not used when connecting to a pool.`,
 	question_6: `What to do if you did not find the answer to your question in this FAQ?`,
-	answer_6: `Post your question in the support groups on <a href="https://discord.gg/zC99cucb" target="_blank" rel="nofollow">Discord</a> or <a href="https://t.me/ironpool" target="_blank" rel="nofollow">Telegram</a> so that we can add your question to this list of ready-made answers. Thank you!`,
+	answer_6: `Post your question in the support groups on <a href="https://discord.gg/Qxub2fG2KZ" target="_blank" rel="nofollow">Discord</a> or <a href="https://t.me/ironpool" target="_blank" rel="nofollow">Telegram</a> so that we can add your question to this list of ready-made answers. Thank you!`,
 	footer_text: `IronPool is built by the community, for the community.`,
 	pool: `Pool`,
 	input_address: `Input Ironfish Address`,

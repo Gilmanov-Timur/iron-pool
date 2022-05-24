@@ -22,7 +22,7 @@ export default {
 	pool_advantages_text: `
 		<p>Надёжный хостинг и стабильное соединение с низкими задержками позволяет в полной мере реализовать хэшрейт Ваших майнеров без потерь.</p>
 		<p>Надежная система выплат - 100% добытых пулом монет $IRON будет распределена между пользователями пула без скрытых комиссий до окончания тестирования.</p>
-		<p>Отличная поддержка пользователей и обратная связь в популярных <a href="https://discord.gg/zC99cucb" target="_blank" rel="nofollow">Discord</a> и <a href="https://t.me/ironpool" target="_blank" rel="nofollow">Telegram</a>.</p>
+		<p>Отличная поддержка пользователей и обратная связь в популярных <a href="https://discord.gg/Qxub2fG2KZ" target="_blank" rel="nofollow">Discord</a> и <a href="https://t.me/ironpool" target="_blank" rel="nofollow">Telegram</a>.</p>
 		<p>Отличительной особенностью пула является поддержка не только Linux, но и Windows клиентов.</p>
 	`,
 	start_mining: `Начать добычу`,
@@ -58,7 +58,7 @@ export default {
 	question_5: `Что такое Graffiti?`,
 	answer_5: `Это уникальное парольное слово при помощи которого разработчики сети IRONFISH идентифицируют своих пользователей в рамках тестовой сети на протяжении всех его фаз. Graffiti привязывается к Вашей почте при регистрации и требуется для отслеживания Ваших достижений в <a href="https://testnet.ironfish.network/leaderboard" target="_blank" rel="nofollow">таблице лидеров</a> тестовой сети. Graffiti на данный момент не используется при подключении к пулу.`,
 	question_6: `Что делать если Вы не нашли ответа на свой вопрос в этом FAQ?`,
-	answer_6: `Задайте Ваш вопрос в группах поддержки в <a href="https://discord.gg/zC99cucb" target="_blank" rel="nofollow">Discord</a> или <a href="https://t.me/ironpool" target="_blank" rel="nofollow">Telegram</a> чтобы мы могли иметь возможность добавить Ваш вопрос в этот список готовых ответов. Спасибо!`,
+	answer_6: `Задайте Ваш вопрос в группах поддержки в <a href="https://discord.gg/Qxub2fG2KZ" target="_blank" rel="nofollow">Discord</a> или <a href="https://t.me/ironpool" target="_blank" rel="nofollow">Telegram</a> чтобы мы могли иметь возможность добавить Ваш вопрос в этот список готовых ответов. Спасибо!`,
 	footer_text: `IronPool создан сообществом для сообщества.`,
 	pool: `Пул`,
 	input_address: `Введите Ironfish адрес`,
