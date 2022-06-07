@@ -255,7 +255,7 @@ export default {
 	methods: {
 		async fetchHistory() {
 			try {
-				const history = (await this.$api.get('/api/statePool')).data.hashRate[0]
+				const history = (await this.$api.get('/statePool')).data.hashRate[0]
 
 				if (this.history && JSON.stringify(this.history) !== JSON.stringify(history)) {
 					this.history = history

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">IronPool</string>
+    <string name="title_activity_main">IronPool</string>
+    <string name="package_name">com.pool.iron</string>
+    <string name="custom_url_scheme">com.pool.iron</string>
+</resources>

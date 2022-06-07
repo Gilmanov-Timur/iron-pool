@@ -51,7 +51,7 @@ export default {
 	methods: {
 		async fetchData() {
 			try {
-				const response = await this.$api.get('/api/home')
+				const response = await this.$api.get('/home')
 				response.data.blocks.reverse()
 				this.poolInfo = response.data
 			} catch (e) {

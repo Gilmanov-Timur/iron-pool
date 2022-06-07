@@ -15,7 +15,7 @@
 							<thead>
 								<tr>
 									<th>{{ $t('height') }}</th>
-									<th>{{ $t('time') }}</th>
+									<th>{{ $t('date') }}</th>
 									<th>{{ $t('hash') }}</th>
 									<th></th>
 								</tr>

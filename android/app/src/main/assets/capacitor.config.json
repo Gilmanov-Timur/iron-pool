@@ -1,0 +1,6 @@
+{
+	"appId": "com.pool.iron",
+	"appName": "IronPool",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}

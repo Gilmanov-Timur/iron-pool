@@ -3,17 +3,15 @@
 		id="header"
 		:class="{'inner-page': $route.name !== 'home'}"
 	>
-		<div
-			class="alert alert-warning alert-dismissible fade show m-0 py-2 text-center"
-			v-if="warningShow"
-		>
+		<div class="alert alert-warning alert-dismissible fade show m-0 py-2 text-center">
 			{{ $t('under_construction') }}
 			<button
+				v-if="0"
 				type="button"
 				class="btn-close p-2"
 				data-bs-dismiss="alert"
 				@click="hideWarning"
-			></button>
+			/>
 		</div>
 		<div class="container py-3">
 			<div class="row align-items-center justify-content-between">

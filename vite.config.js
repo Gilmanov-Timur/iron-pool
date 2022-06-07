@@ -14,7 +14,7 @@ export default defineConfig({
 	},
 	server: {
 		proxy: {
-			'^/api': 'https://iron-pool.xyz/api/home',
+			'^/api': 'https://iron-pool.com',
 		}
 	}
 })

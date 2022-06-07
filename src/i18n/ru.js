@@ -65,7 +65,7 @@ export default {
 	input_your_address: `Введите Ваш IRONFISH адрес`,
 	recently_mined_blocks: `Недавно добытые блоки`,
 	height: `Высота`,
-	time: `Таймер`,
+	date: `Дата`,
 	hash: `Хэш`,
 	view_on_explorer: `Посмотреть в IRONFISH эксплорере`,
 	user_not_found: 'Пользователь не найден',
@@ -74,4 +74,7 @@ export default {
 	current_hashrate: `Текущая скорость хеширования`,
 	earnings: `Выплачено`,
 	status: `Статус`,
+	amount: 'Сумма',
+	transaction: 'Транзакция',
+	payout_statistics: 'Статистика выплат',
 }

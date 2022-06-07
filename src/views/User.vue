@@ -61,7 +61,7 @@
 										{{ $t('earnings') }}
 									</div>
 									<div class="h4 mb-0">
-										{{ userInfo.amountOfUsersMoney.ironWithAComma.toFixed(2) }} IRON
+										{{ userInfo.amountOfUsersMoney.ironWithAComma.toFixed(8) }} IRON
 									</div>
 								</div>
 							</div>
@@ -94,6 +94,46 @@
 					:key="chartKey"
 					v-if="userInfo.userRateEightHours.rawUserRateEightHours.length"
 				/>
+
+				<template v-if="userInfo.awardsPaid.length">
+					<div class="mt-5 mb-4 h3 text-center">
+						{{ $t('payout_statistics') }}
+					</div>
+					<div class="awards">
+						<div class="table-responsive h-100">
+							<table class="table table-striped">
+								<thead>
+									<tr>
+										<th>{{ $t('date') }}</th>
+										<th>{{ $t('amount') }}</th>
+										<th>{{ $t('transaction') }}</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr
+										v-for="award in userInfo.awardsPaid"
+										:key="award.id"
+									>
+										<td>
+											{{ new Date(award.timestamp).toLocaleString($i18n.locale) }}
+										</td>
+										<td>
+											{{ (award.amount / 100000000).toFixed(8) }} IRON
+										</td>
+										<td>
+											<a
+												target="_blank"
+												:href="`https://explorer.ironfish.network/transaction/${award.hash}`"
+											>
+												{{ award.hash }}
+											</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</template>
 			</template>
 		</div>
 	</main>
@@ -151,7 +191,7 @@ export default {
 				this.isLoading = !this.userInfo
 				this.errorMessage = ''
 
-				const response = await this.$api.post('/api/finduser', {
+				const response = await this.$api.post('/finduser', {
 					publickey: this.$route.params.address
 				})
 
@@ -200,3 +240,19 @@ export default {
 	},
 }
 </script>
+
+<style scoped>
+.awards {
+	position: relative;
+	overflow-x: hidden;
+	max-height: 500px;
+}
+.awards table {
+	height: 100%;
+}
+.awards table th {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+</style>
