@@ -200,11 +200,10 @@ export default {
 						this.errorMessage = response.data.errorMessage === 'Not Found User' ? this.$t('user_not_found') : response.data.errorMessage
 					}
 				} else {
+					this.userInfo = response.data
+					this.userInfo.awardsPaid.reverse()
 					if (this.userInfo && JSON.stringify(this.userInfo.userRateEightHours.rawUserRateEightHours) !== JSON.stringify(response.data.userRateEightHours.rawUserRateEightHours)) {
-						this.userInfo = response.data
 						this.chartKey ++
-					} else {
-						this.userInfo = response.data
 					}
 				}
 
