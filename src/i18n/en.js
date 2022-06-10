@@ -32,7 +32,7 @@ export default {
 	mined: `Mined`,
 	payed_out: `Payed Out`,
 	uptime: `>99% Uptime`,
-	automatic_payouts: `Automatic Payouts every 2 hours`,
+	automatic_payouts: `Automatic Payouts within 12 hours`,
 	fee: `Commission`,
 	detailed_statistics: `Detailed statistics and analytics are available in your personal account`,
 	of_mining_power: `of mining power`,
@@ -77,4 +77,5 @@ export default {
 	amount: 'Amount',
 	transaction: 'Transaction',
 	payout_statistics: 'Payout statistics',
+	approximate_earnings: 'Approximate earnings per day',
 }

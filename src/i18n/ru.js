@@ -32,7 +32,7 @@ export default {
 	mined: `Добыто`,
 	payed_out: `Выплачено`,
 	uptime: `>99% Время работы`,
-	automatic_payouts: `Автоматические выплаты каждые 2 часа`,
+	automatic_payouts: `Автоматические выплаты в течение 12 часов`,
 	fee: `Комиссия`,
 	detailed_statistics: `Подробная статистика и аналитика доступны в личном кабинете`,
 	of_mining_power: `мощности майнинга`,
@@ -77,4 +77,5 @@ export default {
 	amount: 'Сумма',
 	transaction: 'Транзакция',
 	payout_statistics: 'Статистика выплат',
+	approximate_earnings: 'Ориентировочный заработок в сутки',
 }
